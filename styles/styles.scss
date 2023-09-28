@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: dashed;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  #board {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+
+    .box {
+      border: solid black 3px;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circle {
+        width: 50%;
+        height: 50%;
+        border: solid 5px rgba(0, 123, 255, 0.331);
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+#playButtonDiv {
+  margin: 40px;
+  width: 20%;
+  button {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #b6eba2;
+    cursor: pointer;
+  }
+  button:disabled {
+    background-color: #b5eba259;
+  }
+}
