@@ -28,6 +28,7 @@ function startGame() {
   });
 }
 
+
 function makeGameWork(e) {
   if (!gameWon) {
     let ticTacToeSymbols = document.createElement("div");
@@ -45,6 +46,7 @@ function makeGameWork(e) {
     win();
   }
 }
+
 
 //WIN
 function win() {
