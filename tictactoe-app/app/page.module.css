@@ -1,14 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
-  color: white;
-}
+
 
 #infoDisplay {
   border: none;
@@ -17,12 +7,19 @@ body {
   background-color: rgba(0, 153, 180, 0.731);
 }
 
-section {
+#winner{
+  background-color: rgba(113, 233, 0, 0.765);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.boardSection {
   margin-top: 50px;
   width: 100%;
   height: 100%;
 }
-section #board {
+.boardSection #board {
   box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
   width: 100%;
   display: flex;
@@ -31,25 +28,25 @@ section #board {
   height: 100%;
   justify-content: center;
 }
-section #board .box {
+.boardSection #board .box {
   border: solid 0.1px rgb(255, 255, 255);
   width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section #board .box .circle {
+.boardSection #board .box .circle {
   width: 80px;
   height: 80px;
   border: solid 5px rgb(255, 60, 0);
   border-radius: 50%;
 }
-section #board .box .cross {
+.boardSection #board .box .cross {
   font-size: 40px;
   font-weight: 400;
   color: rgb(255, 208, 0);
 }
-section #board .box .cross::before {
+.boardSection #board .box .cross::before {
   content: "X";
 }
 
