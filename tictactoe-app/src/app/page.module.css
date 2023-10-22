@@ -33,20 +33,6 @@
   justify-content: center;
   align-items: center;
 }
-.boardSection #board .box .circle {
-  width: 80px;
-  height: 80px;
-  border: solid 5px rgb(255, 60, 0);
-  border-radius: 50%;
-}
-.boardSection #board .box .cross {
-  font-size: 40px;
-  font-weight: 400;
-  color: rgb(255, 208, 0);
-}
-.boardSection #board .box .cross::before {
-  content: "X";
-}
 
 #buttonContainer {
   margin-top: 20px;
